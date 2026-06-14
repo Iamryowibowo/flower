@@ -187,7 +187,7 @@ a {
   .title {
     top: 10%;
     width: 95%;
-    font-size: 1.4rem;
+    font-size: 0.9rem;
     line-height: 1.5;
     letter-spacing: 2px;
   }
@@ -207,7 +207,7 @@ a {
 
 @media (max-width: 360px) {
   .title {
-    font-size: 1.1rem;
+    font-size: 0.9rem;
     letter-spacing: 1px;
   }
 
