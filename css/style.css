@@ -1396,118 +1396,63 @@ body {
 
 /*# sourceMappingURL=style.css.map */
 
-/* ===================================
-   RYO RESPONSIVE + PINK FLOWER PATCH
-=================================== */
-
-.title {
-  width: 95%;
-  left: 50%;
-  transform: translateX(-50%);
-  top: 3%;
-  margin-top: 0;
-
-  font-size: clamp(1.3rem, 5vw, 4rem);
-  line-height: 1.4;
-
-  text-shadow:
-    0 0 10px #fff,
-    0 0 20px #ff69b4,
-    0 0 40px #ff1493;
-}
-
-.night {
-  background-image:
-    radial-gradient(ellipse at top, transparent 0%, var(--dark-color)),
-    radial-gradient(
-      ellipse at bottom,
-      var(--dark-color),
-      rgba(255, 105, 180, 0.25)
-    ),
-    repeating-linear-gradient(
-      220deg,
-      rgb(0, 0, 0) 0px,
-      rgb(0, 0, 0) 19px,
-      transparent 19px,
-      transparent 22px
-    ),
-    repeating-linear-gradient(
-      189deg,
-      rgb(0, 0, 0) 0px,
-      rgb(0, 0, 0) 19px,
-      transparent 19px,
-      transparent 22px
-    ),
-    repeating-linear-gradient(
-      148deg,
-      rgb(0, 0, 0) 0px,
-      rgb(0, 0, 0) 19px,
-      transparent 19px,
-      transparent 22px
-    ),
-    linear-gradient(90deg, rgb(255, 240, 245), rgb(240, 240, 240));
-}
-
-.flower__leaf {
-  background-color: #ffd6ea !important;
-  background-image: linear-gradient(to top, #ff69b4, #ffd6ea) !important;
-}
-
-.flower__white-circle {
-  background: #ffb6d9 !important;
-}
-
-.flower__line {
-  background-image:
-    linear-gradient(
-      to left,
-      rgba(0, 0, 0, 0.2),
-      transparent,
-      rgba(255, 255, 255, 0.2)
-    ),
-    linear-gradient(to top, transparent 10%, #ff69b4, #ffd6ea) !important;
-}
-
-.flower__line__leaf {
-  background-image: linear-gradient(
-    to top,
-    rgba(255, 255, 255, 0.4),
-    #ffd6ea
-  ) !important;
-}
+/* ==========================
+   MOBILE FIX
+========================== */
 
 @media (max-width: 768px) {
   .flowers {
-    transform: scale(0.7);
+    transform: scale(1);
+  }
+
+  .flower--1 .flower__line {
+    height: 85vmin;
+  }
+
+  .flower--2 .flower__line {
+    height: 75vmin;
+  }
+
+  .flower--3 .flower__line {
+    height: 85vmin;
   }
 
   .title {
     font-size: 2rem;
+    top: 5%;
   }
 }
 
 @media (max-width: 480px) {
   .flowers {
-    transform: scale(0.5);
+    transform: scale(1.15);
+  }
+
+  .flower--1 .flower__line {
+    height: 95vmin;
+  }
+
+  .flower--2 .flower__line {
+    height: 85vmin;
+  }
+
+  .flower--3 .flower__line {
+    height: 95vmin;
   }
 
   .title {
-    font-size: 1.3rem;
-    width: 95%;
-    top: 2%;
-  }
-
-  body {
-    overflow-x: hidden;
+    font-size: 1.4rem;
+    width: 92%;
+    top: 4%;
   }
 }
 
 @media (max-width: 360px) {
   .flowers {
-    transform: scale(0.4);
+    transform: scale(1.2);
   }
 
   .title {
-    font-size: 1rem;
+    font-size: 1.1rem;
   }
 }
