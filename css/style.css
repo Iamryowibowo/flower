@@ -1429,19 +1429,19 @@ body {
   }
 
   .flower--1 .flower__line {
-    height: 95vmin;
-  }
-
-  .flower--2 .flower__line {
     height: 85vmin;
   }
 
+  .flower--2 .flower__line {
+    height: 75vmin;
+  }
+
   .flower--3 .flower__line {
-    height: 95vmin;
+    height: 85vmin;
   }
 
   .title {
-    font-size: 1.4rem;
+    font-size: 1.2rem;
     width: 92%;
     top: 4%;
   }
@@ -1453,6 +1453,6 @@ body {
   }
 
   .title {
-    font-size: 1.1rem;
+    font-size: 1rem;
   }
 }
